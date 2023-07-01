@@ -1,5 +1,5 @@
-#Code Challenge: Object Recognition
-##**Instructions**
+# Code Challenge: Object Recognition
+## **Instructions**
 *1. Use an existing Object Detection model architecture of your choice (e.g., ResNet, MobileNet, etc.) available in a deep learning library (e.g., TensorFlow, PyTorch).*
 I have used the PyTorch FasterRCNN with resnet50 as a backbone
 
