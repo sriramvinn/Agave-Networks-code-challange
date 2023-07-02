@@ -7,7 +7,7 @@ I have also used the Flask web app to deploy it locally, we can use this to crea
 ## **Instructions**
 *-Model Training: Utilize cloud-based machine learning platforms like TensorFlow or PyTorch in conjunction with pre-trained models, such as YOLO (You Only Look Once) or SSD (Single Shot MultiBox Detector), to train an object detection model. Fine-tune the pre-trained model on the provided labeled dataset to adapt it to the specific objects of interest.*
 
-I would require further details to redo this step, I am confused with the statement "cloud-based machine learning platforms like TensorFlow or PyTorch", please let me know if this task is meant to train the model in a cloud environment such as AWS. Since task 1 was done in the same way, using PyTorch pertained model and finetuning it, I would like to continue with the final step(Deployment).
+In the Object Detection task, I have trained the model by fine tuning PyTorch pretrained model FasterRCNN ResNet50 for object detection, for this task I am utilising that model for deployment.
 
 *- Evaluation: Assess the performance of the trained object detection model using evaluation metrics such as mean Average Precision (mAP) or Intersection over Union (IoU). Analyze the results to gain insights into the model's accuracy, precision, and recall for different object classes.*
 
@@ -15,4 +15,6 @@ While evaluating the model on the test dataset, I calculated the IOU of the boun
 
 *- Deployment: Deploy the trained object detection model as an inference endpoint that can be accessed through our API. Configure the endpoint to handle image input and provide bounding box predictions for detected objects. Consider the endpoint to be part of an MVP, so do not consider scalability or high loads.*
 
-I have attached the Sagemaker jupyter notebook instance to deploy the model to get the API, furthermore, we can implement the AWS lambda function which can be triggered by when input is posted to API.
+I have attached the Sagemaker jupyter notebook instance to deploy the model to get the API. Furthermore, we can implement the AWS lambda function or serverless framework which can be triggered when input is posted to API.
+
+For the purpose of local deployment I have Implimented Flask, UI and results are attched in the Flask implimentation folder
